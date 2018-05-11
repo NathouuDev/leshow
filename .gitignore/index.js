@@ -7,7 +7,7 @@ bot.on("ready",function() {
     console.log("NathnouteBot est connecter a Discord ! Amuse toi bien")
 });
 
-bot.login("NDQ0NDY5NTE2MzM2ODg5ODU2.DdcYAQ.LkbYbfs7GUa4i2-dpl8mT34SgkQ")
+bot.login(process.env.TOKEN)
 
 bot.on("guildMemberAdd", function(member) {
     member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + "**Bienvenue à toi sur le discord !**");
